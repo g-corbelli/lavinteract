@@ -1,0 +1,30 @@
+Package: lavinteract
+Type: Package
+Title: Interaction Testing and Plotting for lavaan Fitted Objects
+Version: 0.1.0
+Authors@R: 
+    person(
+      "Giuseppe", "Corbelli",
+      email = "giuseppe.corbelli@uniroma1.it",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-2864-3548")
+    )
+Description: Tools to test and visualize moderation in structural equation models fitted with 'lavaan'. Computes conditional (simple) slopes across moderator values and produces predicted lines with Wald confidence ribbons using model estimates and their covariance without refitting. Accepts continuous or categorical moderators. See Rosseel (2012) <doi:10.18637/jss.v048.i02>; Preacher, Curran, and Bauer (2006) <doi:10.1207/s15327906mbr4101_1>.
+URL: https://github.com/g-corbelli/lavinteract
+BugReports: https://github.com/g-corbelli/lavinteract/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports:
+    lavaan,
+    ggplot2,
+    stats
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+Language: en-US
+NeedsCompilation: no
+Maintainer: Giuseppe Corbelli <giuseppe.corbelli@uniroma1.it>
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
